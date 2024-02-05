@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#testimonial-1 {
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: lightgray;
+  color: black;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+opacity: 0.9;
+}
+
+.slider-container button {
+  background: lightgray;
+  color: black;
+}
+
+.prev-btn {
+  left: 5px;
+
+}
+
+.next-btn {
+  right: 5px;
+ 
+}
+
+.content-1 {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 490px) {
+  .prev-btn, .next-btn {
+    font-size: 6px;
+    padding: 5px;
+}
+}
